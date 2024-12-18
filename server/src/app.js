@@ -15,7 +15,7 @@ const corsOptions = {
   origin: [
     "http://localhost:5174",
     "http://localhost:5175",
-    "https://dummy-store-gamma.vercel.app/",
+    "https://dummy-store-gamma.vercel.app",
   ],
   optionsSuccessStatus: 200,
   credentials: true,
