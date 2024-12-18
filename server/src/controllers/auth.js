@@ -57,16 +57,16 @@ export const signUp = async (req, res, next) => {
     await user.save();
 
     // send verify email link
-    const verifyEmailLink = `${process.env.CLIENT_URL}/account/verify-email/${user._id}/${user.verificationToken}`;
-    await mailService({
-      from: process.env.EMAIL,
-      to: user.email,
-      username: user.fullname,
-      subject: "Email verification",
-      text: `Welcome to Instapics! Click the link below to verify your email: ${verifyEmailLink}. Link expires in 24 hours.`,
-      btnText: "Verify",
-      link: verifyEmailLink,
-    });
+    // const verifyEmailLink = `${process.env.CLIENT_URL}/account/verify-email/${user._id}/${user.verificationToken}`;
+    // await mailService({
+    //   from: process.env.EMAIL,
+    //   to: user.email,
+    //   username: user.fullname,
+    //   subject: "Email verification",
+    //   text: `Welcome to Instapics! Click the link below to verify your email: ${verifyEmailLink}. Link expires in 24 hours.`,
+    //   btnText: "Verify",
+    //   link: verifyEmailLink,
+    // });
 
     //generate tokens
     const accessToken = generateAccessToken(user._id, user.role); //save to localStorage
