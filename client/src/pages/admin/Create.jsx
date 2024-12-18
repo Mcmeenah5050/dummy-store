@@ -1,10 +1,10 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useAuth } from "../../../hooks/useStore";
+import { useAuth } from "../../hooks/useStore";
 import { useForm } from "react-hook-form";
 import { BiPlus } from "react-icons/bi";
 import { toast } from "sonner";
-import { createProduct } from "../../../api/api";
+import { createProduct } from "../../api/api";
 
 export default function Create() {
   const [selectedImages, setSelectedImages] = useState([]);

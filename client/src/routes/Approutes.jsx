@@ -7,7 +7,6 @@ import Login from "../pages/login/Login";
 import Profile from "../pages/profile/Profile";
 import { PrivateRoutes, PublicRoutes } from "./ProtectedRoutes";
 import Signup from "../pages/signup/Signup";
-import Create from "../pages/admin/create/create";
 import AllProducts from "../pages/admin/AllProducts";
 import EditProduct from "../pages/admin/EditProduct";
 import Cart from "../pages/cart/Cart";
@@ -15,6 +14,7 @@ import Checkout from "../pages/checkout/Checkout";
 import Orders from "../pages/orders/Orders";
 import OrderDetails from "../pages/orders/OrderDetails";
 import YourOrders from "../pages/orders/YourOrders";
+import Create from "../pages/admin/Create";
 
 const Root = lazy(() => import("../layouts/Root"));
 const Auth = lazy(() => import("../layouts/Auth"));
