@@ -60,7 +60,7 @@ export default function Home() {
                 <LazyLoadImage
                   src={item.images[0]}
                   alt={"item.title"}
-                  className="h-full w-full"
+                  className="h-[450px] lg:h-[600px] w-full"
                   effect="blur"
                 />
               </div>

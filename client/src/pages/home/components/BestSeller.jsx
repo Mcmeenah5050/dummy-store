@@ -17,7 +17,7 @@ export default function BestSeller({ products }) {
   );
 
   return (
-    <div className="mt-16 max-w-[1024px] mx-auto">
+    <div className="mt-32 max-w-[1024px] mx-auto">
       <h1 className="font-semibold text-xl">Best Sellers</h1>
       <div className="md:flex mt-6">
         {filterHighPrices.map((product) => (
